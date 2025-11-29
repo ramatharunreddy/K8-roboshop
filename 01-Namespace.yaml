@@ -10,4 +10,15 @@ metadata:
    description: "This ns created by Devops-admin team"
    team: "devops-admin"
    contact: "itlife486@gmail.com"
+---
+apiVersion: v1
+kind: Namespace
+metadata: 
+  name: "us-east-a"
+  labels:
+    env: auto
+    team: "custom_app"
+  annotations:
+     description: "This maintain for custom team in auto env"
+     contact: "custom_app@gmail.com"
 
