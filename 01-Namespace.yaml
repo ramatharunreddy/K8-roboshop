@@ -6,5 +6,8 @@ metadata:
   labels:
    env: dev
    team: "backend_devops_a"
-
+  annotation:
+   description: "This ns created by Devops-admin team"
+   team: "devops-admin"
+   contact: "itlife486@gmail.com"
 
