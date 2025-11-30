@@ -30,6 +30,6 @@ spec:
      memory: "900Mi"
  - name: almalinux
    image: almalinux:9
-   command: ["sleep","1000"]
+   command: ["sleep","10"]
 
 
