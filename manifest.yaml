@@ -6,16 +6,16 @@ metadata:
  labels: 
   env: dev
 spec: 
- resources:
-    requests:
-     cpu: "500m"
-     memory: "250Mi"
-    limits:
-     cpu: "1"
-     memory: "500Mi"
+#  resources:
+#     requests:
+#      cpu: "500m"
+#      memory: "250Mi"
+#     limits:
+#      cpu: "1"
+#      memory: "500Mi"
  containers:
  - name: nginx
-   image: nginx
+   image: "nginx"
   # ports: 
   # - containerPort: 80
    resources:
