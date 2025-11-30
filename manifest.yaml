@@ -17,20 +17,20 @@ spec:
 #      cpu: "1"
 #      memory: "500Mi"
  containers:
+ - name: almalinux
+   image: almalinux:9
+   command: ["sleep","10"]
  - name: nginx
    image: nginx
   # ports: 
   # - containerPort: 80
    resources:
-    requests:
-     cpu: "500m"
-     memory: "550Mi"
-    limits:
-     cpu: "500m"
-     memory: "900Mi"
- initContainers:
- - name: almalinux
-   image: almalinux:9
-   command: ["sleep","10"]
+     requests:
+      cpu: "500m"
+      memory: "550Mi"
+     limits:
+      cpu: "500m"
+      memory: "900Mi"
+ 
 
 
