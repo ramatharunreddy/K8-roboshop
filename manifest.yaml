@@ -25,7 +25,7 @@ spec:
     limits:
      cpu: "500m"
      memory: "500Mi"
- - name: nginx
-   image: nginx
+ - name: almalinux
+   image: almalinux:9
 
 
