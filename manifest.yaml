@@ -5,6 +5,8 @@ metadata:
  namespace: roboshop-dev
  labels: 
   env: dev
+ annotations:
+  kubectl.kubernetes.io/default-container: nginx
 spec: 
 #  resources:
 #     requests:
