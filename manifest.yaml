@@ -28,7 +28,7 @@ spec:
     limits:
      cpu: "500m"
      memory: "900Mi"
- initcontainers:
+ initContainers:
  - name: almalinux
    image: almalinux:9
    command: ["sleep","10"]
