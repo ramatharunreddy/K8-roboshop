@@ -26,6 +26,6 @@ spec:
      cpu: "500m"
      memory: "500Mi"
  - name: nginx
-   image: nginx
+   image: nginx:9
 
 
