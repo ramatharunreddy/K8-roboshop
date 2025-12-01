@@ -28,7 +28,7 @@ spec:
      limits:
       cpu: "500m"
       memory: "900Mi"
-   envfrom:
+   envFrom:
    - configMapRef:
        name: dev-cm
   
