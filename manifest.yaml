@@ -36,7 +36,7 @@ metadata:
 spec: 
  containers:
  - name: nginx
-   image: joindevops:v1
+   image: joindevops/frontend:v1
   
  
 
