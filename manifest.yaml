@@ -23,7 +23,28 @@ spec:
       cpu: "500m"
       memory: "900Mi"
  
-  
+---
 
+apiVersion: v1
+kind: Pod
+metadata: 
+ name: almalinux-pod
+ namespace: roboshop-dev
+ labels: 
+  env: dev
+  project: roboshop
+spec: 
+ containers:
+ - name: almalinux
+   image: almalinux:9
+   command: ["sleep", "1000"]
+   resources:
+     requests:
+      cpu: "500m"
+      memory: "550Mi"
+     limits:
+      cpu: "500m"
+      memory: "900Mi"
+ 
 
 
