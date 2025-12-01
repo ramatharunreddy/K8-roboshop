@@ -28,16 +28,15 @@ spec:
 apiVersion: v1
 kind: Pod
 metadata: 
- name: almalinux-pod
+ name: joindevops-pod
  namespace: roboshop-dev
  labels: 
   env: dev
   project: roboshop
 spec: 
  containers:
- - name: almalinux
-   image: almalinux:9
-   command: ["sleep", "1000"]
+ - name: nginx
+   image: joindevops:v1
    resources:
      requests:
       cpu: "500m"
