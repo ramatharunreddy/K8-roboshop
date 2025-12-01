@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+ name: dev-svc-f
+spec: 
+ selector: 
+  env: dev
+  project: roboshop
+  compenent: froentend
+ ports:
+ - name: ings-80
+   port: 80
+   targetPort: 80
+

@@ -5,17 +5,11 @@ metadata:
  namespace: roboshop-dev
  labels: 
   env: dev
+  project: roboshop
+  compenent: froentend
  annotations:
   kubectl.kubernetes.io/default-container: nginx
 spec: 
- restartPolicy: Never
-#  resources:
-#     requests:
-#      cpu: "500m"
-#      memory: "250Mi"
-#     limits:
-#      cpu: "1"
-#      memory: "500Mi"
  containers:
  - name: nginx
    image: nginx
@@ -28,9 +22,7 @@ spec:
      limits:
       cpu: "500m"
       memory: "900Mi"
-   envFrom:
-   - configMapRef:
-       name: dev-cm
+ 
   
 
 
