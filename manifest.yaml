@@ -28,15 +28,15 @@ spec:
 apiVersion: v1
 kind: Pod
 metadata: 
- name: joindevops-pod
+ name: alpine-pod
  namespace: roboshop-dev
  labels: 
   env: dev
   project: roboshop
 spec: 
  containers:
- - name: nginx
-   image: joindevops/frontend:v1
+ - name: alpine
+   image: ramatharun/alpine:v1
   
  
 
