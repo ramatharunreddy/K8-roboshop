@@ -37,6 +37,7 @@ spec:
  containers:
  - name: alpine
    image: ramatharun/alpine:v1
+   command: ["sleep","1000"]
   
  
 
