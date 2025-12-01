@@ -37,13 +37,7 @@ spec:
  containers:
  - name: nginx
    image: joindevops:v1
-   resources:
-     requests:
-      cpu: "500m"
-      memory: "550Mi"
-     limits:
-      cpu: "500m"
-      memory: "900Mi"
+  
  
 
 
