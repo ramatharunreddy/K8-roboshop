@@ -3,5 +3,7 @@ kind: ConfigMap
 metadata:
  name: dev-cm
 data:
- env: dev
- name: "tarun"
+ game.propertites: |
+  env: dev
+ ui.propertites: |
+  name: "tarun"
