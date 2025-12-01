@@ -3,5 +3,5 @@ kind: ConfigMap
 metadata:
  name: dev-cm
 data:
-- env: dev
-  name: "tarun"
+ env: dev
+ name: "tarun"
