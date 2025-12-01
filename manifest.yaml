@@ -28,7 +28,7 @@ spec:
 apiVersion: v1
 kind: Pod
 metadata: 
- name: alpine-pod
+ name: ubuntu-pod
  namespace: roboshop-dev
  labels: 
   env: dev
@@ -36,7 +36,7 @@ metadata:
 spec: 
  containers:
  - name: alpine
-   image: ramatharun/alpine:v1
+   image: ramatharun/ubuntu:v1
    command: ["sleep","1000"]
   
  
