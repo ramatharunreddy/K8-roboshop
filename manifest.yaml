@@ -4,9 +4,9 @@ metadata:
  name: nginx-pod
  namespace: roboshop-dev
  labels: 
-  env: dev
-  project: roboshop
-  compenent: froentend
+  Env: dev
+  Project: roboshop
+  Compenent: nginx
  annotations:
   kubectl.kubernetes.io/default-container: nginx
 spec: 
@@ -35,7 +35,7 @@ metadata:
   project: roboshop
 spec: 
  containers:
- - name: alpine
+ - name: ubuntu
    image: ramatharun/ubuntu:v1
    command: ["sleep","1000"]
    dnsPolicy: ClusterFirst
