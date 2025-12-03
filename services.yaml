@@ -3,13 +3,13 @@ kind: Service
 metadata: 
  name: Dev-Clus-svr
 spec: 
- selectot: 
+ selector: 
   Env: dev
   Project: roboshop
   Compenent: nginx
  ports:
-  #- name: ingre-http
-  - protocal: TCP
+  - name: ingre-http
+    protocal: TCP
     port: 80
     targetPort: 80
      
