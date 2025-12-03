@@ -9,6 +9,7 @@ spec:
   Compenent: nginx
  ports:
   -  protocol: TCP
+     name: ingress-http  
      port: 80
      targetPort: 80
      
