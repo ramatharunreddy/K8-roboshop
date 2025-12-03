@@ -38,7 +38,6 @@ spec:
  - name: ubuntu
    image: ramatharun/ubuntu:v1
    command: ["sleep","1000"]
-   dnsPolicy: ClusterFirst
   
  
 
