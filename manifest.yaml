@@ -76,7 +76,7 @@ spec:
       image: nginx:alpine 
 ---
 apiVersion: apps/v1 
-kind: Devployment
+kind: Deployment
 metadata: 
  name: frontend-dm
  labels: 
