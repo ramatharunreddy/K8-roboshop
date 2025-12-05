@@ -50,11 +50,11 @@ spec:
     image: nginx
 
 ---
-apiVersion: app/v1 
+apiVersion: apps/v1 
 kind: ReplicaSet 
 metadata: 
  labels: 
- - project: roboshop
+   project: roboshop
    env: dev
 spec:
   replicas: 3
