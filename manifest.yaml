@@ -73,7 +73,7 @@ spec:
    spec:
     containers: 
     - name: nginx
-      image: nginx:alpine 
+      image: nginx
 ---
 apiVersion: apps/v1 
 kind: Deployment
