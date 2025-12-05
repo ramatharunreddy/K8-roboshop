@@ -47,4 +47,4 @@ metadata:
 spec:
  containers:
  -  name: nginx-demo-v1
-    image: latest
+    image: nginx
