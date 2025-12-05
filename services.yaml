@@ -81,8 +81,8 @@ metadata:
 addressType: IPv4
 ports:
     #appProtocol: http
-    protocol: TCP
-    port: 1521
+  -  protocol: TCP
+     port: 1521
 endpoints:
   - addresses:
       - "10.14.149.5"
