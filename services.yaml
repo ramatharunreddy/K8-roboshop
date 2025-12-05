@@ -63,7 +63,10 @@ metadata:
  name: external-db
  labels: 
   name:  ora-db-sl
- subsets:
+ports:
+    protocol: TCP
+    port: 1521
+endpoints:
   - addresses:
       - ip: 10.14.149.5  # external DB IP
     ports:
