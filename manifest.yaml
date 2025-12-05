@@ -56,6 +56,7 @@ metadata:
  labels: 
    project: roboshop
    env: dev
+   tier: frontend
 spec:
   replicas: 3
   selector:
