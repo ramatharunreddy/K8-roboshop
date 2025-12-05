@@ -73,4 +73,30 @@ spec:
    spec:
     containers: 
     - name: nginx
-      image: nginx:alpine
+      image: nginx:alpine 
+---
+apiVersion: apps/v1 
+kind: Devployment
+metadata: 
+ name: frontend-dm
+ labels: 
+  project: roboshop
+  env: dev 
+spec: 
+ replicas: 3
+ selector:
+  matchLabels: 
+   project: roboshop
+   env: dev 
+   tier: frontend 
+template: 
+ metadata: 
+  labels: 
+   project: roboshop
+   env: dev 
+   tier: frontend 
+ spec: 
+  containers: 
+   - name: nginx 
+     image: nginx:alpine
+  
