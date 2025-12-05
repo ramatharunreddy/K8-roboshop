@@ -55,7 +55,7 @@ spec:
  ports:
  - protocol: TCP 
    port: 1521
-   targetport: 1521
+   targetPort: 1521
 ---
 apiVersion: v1 
 kind: Endpoints
