@@ -60,13 +60,13 @@ spec:
   replicas: 3
   selector:
    matchLabels:
-   - project: roboshop
+     project: roboshop
      env: dev 
      tier: frontend 
   template: 
    metadata:
     labels:
-    - project: roboshop
+      project: roboshop
       env: dev 
       tier: frontend
   spec:
