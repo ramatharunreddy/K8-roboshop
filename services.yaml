@@ -76,8 +76,8 @@ metadata:
   labels:
     # You should set the "kubernetes.io/service-name" label.
     # Set its value to match the name of the Service
-   # kubernetes.io/service-name: my-service
-    name: ora-db-sl 
+    kubernetes.io/service-name: ora-db-sl 
+    #name: ora-db-sl 
 addressType: IPv4
 ports:
     #appProtocol: http
