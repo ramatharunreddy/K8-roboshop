@@ -48,3 +48,28 @@ spec:
  containers:
  -  name: nginx-demo-v1
     image: nginx
+
+---
+apiVersion: app/v1 
+kind: ReplicaSet 
+metadata: 
+ labels: 
+ - project: roboshop
+   env: dev
+spec:
+  replicas: 3
+  selector:
+   matchLabels:
+   - project: roboshop
+     env: dev 
+     tier: frontend 
+  template: 
+   metadata:
+    labels:
+    - project: roboshop
+      env: dev 
+      tier: frontend
+  spec:
+    containers: 
+    - name: nginx
+      image: nginx 
