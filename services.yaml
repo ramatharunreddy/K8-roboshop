@@ -57,17 +57,12 @@ spec:
    port: 1521
    targetPort: 1521
 ---
-apiVersion: v1 
+apiVersion: v1
 kind: Endpoints
-metadata: 
- name: external-db
- labels: 
-  name:  ora-db-sl
-ports:
-    protocol: TCP
-    port: 1521
-endpoints:
+metadata:
+  name: ora-db-sl   # must match the Service name
+subsets:
   - addresses:
-      - ip: 10.14.149.5  # external DB IP
+      - ip: 203.0.113.10   # IP of the external database
     ports:
-      - port: 1521
+      - port: 3306          # port on the external database
