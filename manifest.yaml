@@ -100,3 +100,12 @@ spec:
     - name: nginx 
       image: nginx
   
+---
+apiVersion: v1 
+kind: Pod 
+metadata: 
+ name: oracle-client-pod 
+spec: 
+ containers: 
+  - name: oracle-client-pod 
+    image:  ramatharun/oralce_client:v1
