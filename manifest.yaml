@@ -43,7 +43,7 @@ spec:
 apiVersion: v1 
 kind: Pod 
 metadata: 
- - name: nginx-demo
+  name: nginx-demo
 spec:
  - name: nginx-demo-v1
    image: latest
