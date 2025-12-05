@@ -45,5 +45,6 @@ kind: Pod
 metadata: 
   name: nginx-demo
 spec:
- - name: nginx-demo-v1
-   image: latest
+ containers:
+ -  name: nginx-demo-v1
+    image: latest
