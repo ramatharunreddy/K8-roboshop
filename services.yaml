@@ -86,3 +86,4 @@ ports:
 endpoints:
   - addresses:
       - "10.14.149.5"
+      - "172.18.96.5"
