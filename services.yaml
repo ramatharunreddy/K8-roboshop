@@ -63,7 +63,7 @@ metadata:
   name: ora-db-sl   # must match the Service name
 subsets:
   - addresses:
-      - ip: 10.14.149.5   # IP of the external database
+      - ip: 172.18.96.5   # IP of the external database
     ports:
       - port: 1521          # port on the external database
 ---
