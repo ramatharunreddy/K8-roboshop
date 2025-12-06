@@ -80,8 +80,9 @@ metadata:
     #name: ora-db-sl 
 addressType: IPv4
 ports:
-    #appProtocol: http
-  -  protocol: TCP
+  -  name: tcp-port
+     appProtocol: http
+     protocol: TCP
      port: 1521
 endpoints:
   - addresses:
