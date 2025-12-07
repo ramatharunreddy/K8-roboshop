@@ -108,7 +108,7 @@ metadata:
 spec: 
  containers: 
   - name: oracle-client-pod 
-    image:  ramatharun/oralce_client:v1.1
+    image:  ramatharun/oralce_client:v1.2
 
 ---
 apiVersion: v1 
@@ -118,7 +118,7 @@ metadata:
 spec: 
  containers: 
   - name: oracle-client-pod 
-    image:  ramatharun/oralce_client:v1.1
+    image:  ramatharun/oralce_client:v1.2
 
 ---
 apiVersion: v1 
@@ -128,4 +128,4 @@ metadata:
 spec: 
  containers: 
   - name: oracle-client-pod 
-    image:  ramatharun/oralce_client:v1.1
+    image:  ramatharun/oralce_client:v1.2
