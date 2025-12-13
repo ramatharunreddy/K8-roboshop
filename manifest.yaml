@@ -75,23 +75,25 @@
 # #     - name: nginx
 # #       image: nginx
 
-appVersion: apps/v1 
+apiVersion: apps/v1 
 kind: ReplicaSet 
 metadata: 
  name: nginx_rs
 spec: 
   replicas: 3
   selector:
-   matchLabels: nginx_rs
+   matchLabels: 
+    project: roboshop
+    env: dev
   template: 
    metadata: 
-    name: nginx_rs
+   # name: nginx-pod-rs
     labels: 
      project: roboshop
      env: dev 
    spec: 
     containers: 
-    - name: nginx
+    - name: nginx-pod-rs
       image: nginx
 # # ---
 # # apiVersion: apps/v1 
