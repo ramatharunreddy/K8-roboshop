@@ -79,7 +79,7 @@ appVersion: apps/v1
 kind: ReplicaSet 
 metadata: 
  name: nginx_rs
- spec: 
+spec: 
   replicas: 3
   template: 
    metadata: 
