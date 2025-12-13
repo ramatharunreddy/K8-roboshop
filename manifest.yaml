@@ -75,7 +75,7 @@
 # #     - name: nginx
 # #       image: nginx
 
-appVersion: v1 
+appVersion: apps/v1 
 kind: ReplicaSet 
 metadata: 
  name: nginx_rs
