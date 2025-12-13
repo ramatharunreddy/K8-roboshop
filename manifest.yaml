@@ -87,7 +87,7 @@ spec:
     env: dev
   template: 
    metadata: 
-   # name: nginx-pod-rs
+    name: nginx-pod-rs
     labels: 
      project: roboshop
      env: dev 
